@@ -1,0 +1,12 @@
+# SCHEMA DEFINITION
+
+type Link {
+    url: String!
+    name: String!
+    description: String!
+    archived: Boolean
+}
+
+type Query{
+    getAllLinks: [Link!]!  #Returns many links
+}
