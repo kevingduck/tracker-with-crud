@@ -57,7 +57,6 @@ function App() {
               </div>
               <div class="item-form"></div>
               <div class="item-form">
-                <span>Item</span>
                 <div class="form-group ">
                   <label class="control-label " for="vendor">
                     Vendor
@@ -125,7 +124,7 @@ function App() {
               </div>
               <div class="form-group">
                 <button class="btn btn-primary" onclick="myFunction()" name="submit" type="submit">
-                  Submit
+                  Create Project
                 </button>
               </div>
             </form>
