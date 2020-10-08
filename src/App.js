@@ -6,9 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p> REACT WITH NETLIFY DEV </p>
-        <p> FUNCTIONS SERVER IS LISTENING ON 56521</p>
       </header>
     </div>
   );
