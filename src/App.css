@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +35,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.main-form input, textarea, label {
+  width:1000px;
+  margin:5px;
+  padding:5px;
+  float: left;
+  text-align: left;
 }

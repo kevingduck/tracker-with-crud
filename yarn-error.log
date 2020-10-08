@@ -2,7 +2,7 @@ Arguments:
   /usr/local/bin/node /usr/local/bin/yarn start
 
 PATH: 
-  /home/kevin/anaconda3/bin:/home/kevin/anaconda3/bin:/home/kevin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+  /home/kevin/anaconda3/bin:/home/kevin/anaconda3/bin:/home/kevin/anaconda3/bin:/home/kevin/anaconda3/bin:/home/kevin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 
 Yarn version: 
   1.15.2
