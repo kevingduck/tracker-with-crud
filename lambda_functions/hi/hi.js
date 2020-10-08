@@ -3,7 +3,7 @@ exports.handler = async (event, context) => {
   try {
     let html = `
       <h1>Hello</h1>
-      <p>HELLO SERVERLESS!<p>
+      <p>HELLO SERVERLESS!!<p>
     `;
     return {
       statusCode: 200,
