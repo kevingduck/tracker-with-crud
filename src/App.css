@@ -37,10 +37,14 @@
   }
 }
 
-.main-form input, textarea, label {
+.main-form {
+  text-align: left;
+}
+
+/* .main-form input, textarea, label {
   width:1000px;
   margin:5px;
   padding:5px;
   float: left;
   text-align: left;
-}
+} */
