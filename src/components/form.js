@@ -1,9 +1,6 @@
 import React from 'react';
 
 class Form extends React.Component {
-  myFunction() {
-    alert('hello!')
-  }
   render() {
     return (
       <div class="container-fluid main-form">
@@ -13,7 +10,7 @@ class Form extends React.Component {
               <div class="form-group">
                 <button class="btn btn-primary" onClick={this.myFunction}>
                   Create Project
-                </button>
+                </button><br></br>
               </div>
               <div class="form-group">
                 <label class="control-label " for="po_number">
