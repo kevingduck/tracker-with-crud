@@ -8,8 +8,10 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.2",
     "faunadb": "^3.0.1",
+    "jquery": "^3.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-hook-form": "^6.9.2",
     "react-scripts": "3.4.3"
   },
   "scripts": {
