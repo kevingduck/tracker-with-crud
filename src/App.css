@@ -38,7 +38,14 @@
 }
 
 .main-form {
-  text-align: left;
+  margin: 20px;
+  width: 500px;
+  clear:both;
+}
+
+.main-form input {
+  width: 100%;
+  clear:both;
 }
 
 /* .main-form input, textarea, label {

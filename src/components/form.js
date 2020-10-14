@@ -11,7 +11,7 @@ class Form extends React.Component {
   objectifyForm(formArray) {
     //serialize data function
     var returnArray = {};
-    for (var i = 0; i < formArray.length; i++) {
+    for (var i = 0; i <= formArray.length; i++) {
       returnArray[formArray[i]['name']] = formArray[i]['value'];
     }
     return returnArray;
@@ -21,33 +21,43 @@ class Form extends React.Component {
     event.preventDefault();
     const form = event.target;
     let data = this.objectifyForm(form);
-
-    console.log('state data: ' + JSON.stringify(data));
-    fetch('./.netlify/functions/items', {
-      method: 'POST',
-      body: JSON.stringify(data),
-    });
+    if (window.confirm("Ready to save?" + JSON.stringify(data))) {
+      fetch('./.netlify/functions/projects', {
+        method: 'POST',
+        body: JSON.stringify(data),
+      });
+      event.target.reset();
+      console.log('created' + JSON.stringify(data));
+    };    
   }
 
   render() {
     return (
-      <div>
-        <form
-          onSubmit={this.handleSubmit}
-        >
-          <label htmlFor="username">Username:</label>
-          <input id="username" name="username" type="text" />
+      <div className="main-form">
+        <form onSubmit={this.handleSubmit}>
+          <label htmlFor="po_number">PO Number:</label>
+          <input id="po_number" name="po_number" type="text" />
 
-          <label htmlFor="email">Email:</label>
-          <input id="email" name="email" type="email" />
+          <label htmlFor="representative">Representative:</label>
+          <input id="representative" name="representative" type="text" />
 
-          <button>Send data!</button>
+          <label htmlFor="customer_name">Customer Name:</label>
+          <input id="customer_name" name="customer_name" type="text" />
+
+          <label htmlFor="shipping_address">Shipping Address:</label>
+          <input id="shipping_address" name="shipping_address" type="text" />
+
+          <label htmlFor="email_address">Email Address:</label>
+          <input id="email_address" name="email_address" type="email" />
+
+          <label htmlFor="invoice_address">Paper Invoice Address:</label>
+          <input id="invoice_address" name="invoice_address" type="text" />
+
+          <label htmlFor="billing_percentage">Billing Percentage:</label>
+          <input id="billing_percentage" name="billing_percentage" type="text" defaultValue="100"/>
+
+          <button>Create Project</button>
         </form>
-
-        <div className="res-block">
-          <h3>Transformed data to be sent:</h3>
-          <pre>FormData {this.data}</pre>
-        </div>
       </div>
     );
   }
