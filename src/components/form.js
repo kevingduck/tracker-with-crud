@@ -11,7 +11,8 @@ class Form extends React.Component {
   objectifyForm(formArray) {
     //serialize data function
     var returnArray = {};
-    for (var i = 0; i <= formArray.length; i++) {
+    debugger;
+    for (var i = 0; i < formArray.length; i++) {
       returnArray[formArray[i]['name']] = formArray[i]['value'];
     }
     return returnArray;
@@ -20,7 +21,7 @@ class Form extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     const form = event.target;
-    let data = this.objectifyForm(form);
+    const data = this.objectifyForm(form);
     if (window.confirm("Ready to save?" + JSON.stringify(data))) {
       fetch('./.netlify/functions/projects', {
         method: 'POST',
