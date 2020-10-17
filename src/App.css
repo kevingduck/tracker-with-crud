@@ -1,16 +1,10 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -28,30 +22,40 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.full-form {
+  display: flex;
 }
 
-.main-form {
-  margin: 20px;
-  width: 500px;
-  clear:both;
+.main-form div {
+  display: flex;
 }
 
 .main-form input {
-  width: 100%;
-  clear:both;
+  display: block;
 }
 
-/* .main-form input, textarea, label {
-  width:1000px;
-  margin:5px;
-  padding:5px;
-  float: left;
+.main-form * {
   text-align: left;
-} */
+  margin: 10px;
+  list-style: none;
+  /* width: 500px; */
+  /* clear:both; */
+}
+
+.main-form button {
+  background: green;
+  color: white;
+  border-radius: 5px;
+}
+
+.item-form li {
+ float:left;
+}
+
+.item-form {
+  background:lightgray;
+}
+
+table * {
+  padding: 5px;
+}
