@@ -15,12 +15,6 @@ class App extends React.Component {
           <div>
             <Form></Form>
           </div>
-          <div>
-            <ItemForm></ItemForm>
-          </div>
-          <div>
-            <ProjectDetail></ProjectDetail>
-          </div>
         </div>
       </div>
     );

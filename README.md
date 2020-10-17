@@ -1,3 +1,13 @@
+
+## CRUD project template
+
+This project template includes a front end form and a serverless FaunaDB integration for data storage. 
+
+Use this as a starting point for CRUD apps.
+
+Set up a FaunaDB and export the FAUNADB_SERVER_SECRET in your directory to set the database.\
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
